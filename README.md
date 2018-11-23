@@ -9,6 +9,18 @@ Javascript implementation for π.
 npm install leibniz-pi --save
 ```
 
+## Usage
+
+```
+import {Pie} from "leibniz-pi";
+
+const Pie = require("leibniz-pi").Pie;
+
+const pi = new Pie(8 /* precision */);
+pi.generate();   //3.141592663589793
+
+```
+
 
 ## Testing
 

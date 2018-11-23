@@ -18,4 +18,11 @@ describe('typescript pi', function () {
 		assert(Math.abs(pi.generate() - 3.14159265358979323846264338327950288419) < 0.00001);
 	  // assert(require('../build/index.js') !== undefined);
 	});
+
+	it('can be imported without blowing up', function () {
+		var pi = new Pie(8);
+		pi.generate();
+		assert(Math.abs(pi.generate() - 3.14159265358979323846264338327950288419) < 0.00000001);
+	  // assert(require('../build/index.js') !== undefined);
+	});
 });
